@@ -1,0 +1,165 @@
+{
+  "config": {
+    "samples": 50000,
+    "horizon": 1000,
+    "a": 1.0,
+    "b": 1.0,
+    "alpha": 0.05,
+    "seed": 20260930,
+    "output": "results/simulation.json"
+  },
+  "beta_confidence_sequence": [
+    {
+      "p": 0.01,
+      "rule": "upper_below_half",
+      "exclusion": {
+        "events": 644,
+        "trials": 50000,
+        "estimate": 0.01288,
+        "binomial_se": 0.0005042639308933368,
+        "wilson_95": [
+          0.011928412730912117,
+          0.01390643157569091
+        ]
+      },
+      "stopped_rate": 1.0,
+      "mean_stop_time_when_stopped": 8.33362
+    },
+    {
+      "p": 0.1,
+      "rule": "upper_below_half",
+      "exclusion": {
+        "events": 1125,
+        "trials": 50000,
+        "estimate": 0.0225,
+        "binomial_se": 0.0006632307290830243,
+        "wilson_95": [
+          0.021236307192166213,
+          0.02383705903464226
+        ]
+      },
+      "stopped_rate": 1.0,
+      "mean_stop_time_when_stopped": 12.68734
+    },
+    {
+      "p": 0.5,
+      "rule": "width",
+      "exclusion": {
+        "events": 1457,
+        "trials": 50000,
+        "estimate": 0.02914,
+        "binomial_se": 0.0007522082211728346,
+        "wilson_95": [
+          0.027701484900607976,
+          0.03065086111311985
+        ]
+      },
+      "stopped_rate": 1.0,
+      "mean_stop_time_when_stopped": 164.56982
+    },
+    {
+      "p": 0.9,
+      "rule": "lower_above_half",
+      "exclusion": {
+        "events": 1127,
+        "trials": 50000,
+        "estimate": 0.02254,
+        "binomial_se": 0.0006638064235904923,
+        "wilson_95": [
+          0.021275176357324115,
+          0.02387818372362243
+        ]
+      },
+      "stopped_rate": 1.0,
+      "mean_stop_time_when_stopped": 12.6995
+    },
+    {
+      "p": 0.99,
+      "rule": "lower_above_half",
+      "exclusion": {
+        "events": 676,
+        "trials": 50000,
+        "estimate": 0.01352,
+        "binomial_se": 0.0005164728376207214,
+        "wilson_95": [
+          0.012544454011589695,
+          0.014570291961222427
+        ]
+      },
+      "stopped_rate": 1.0,
+      "mean_stop_time_when_stopped": 8.34012
+    }
+  ],
+  "fixed_time_wilson_repeated_review": [
+    {
+      "p": 0.01,
+      "horizon": 1000,
+      "exclusion": {
+        "events": 17988,
+        "trials": 50000,
+        "estimate": 0.35976,
+        "binomial_se": 0.0021463119176857778,
+        "wilson_95": [
+          0.3555642274301454,
+          0.3639773199617867
+        ]
+      }
+    },
+    {
+      "p": 0.1,
+      "horizon": 1000,
+      "exclusion": {
+        "events": 24942,
+        "trials": 50000,
+        "estimate": 0.49884,
+        "binomial_se": 0.002236061959785551,
+        "wilson_95": [
+          0.49445765655182095,
+          0.5032225216781749
+        ]
+      }
+    },
+    {
+      "p": 0.5,
+      "horizon": 1000,
+      "exclusion": {
+        "events": 26239,
+        "trials": 50000,
+        "estimate": 0.52478,
+        "binomial_se": 0.0022333201812548063,
+        "wilson_95": [
+          0.5204010369237732,
+          0.5291551557147604
+        ]
+      }
+    },
+    {
+      "p": 0.9,
+      "horizon": 1000,
+      "exclusion": {
+        "events": 24510,
+        "trials": 50000,
+        "estimate": 0.4902,
+        "binomial_se": 0.0022356384323051885,
+        "wilson_95": [
+          0.48581915030785683,
+          0.4945823554283163
+        ]
+      }
+    },
+    {
+      "p": 0.99,
+      "horizon": 1000,
+      "exclusion": {
+        "events": 18302,
+        "trials": 50000,
+        "estimate": 0.36604,
+        "binomial_se": 0.002154319931672174,
+        "wilson_95": [
+          0.36182805141864816,
+          0.37027253107296065
+        ]
+      }
+    }
+  ]
+}
